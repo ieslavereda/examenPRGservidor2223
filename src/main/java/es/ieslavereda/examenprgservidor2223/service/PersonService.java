@@ -28,8 +28,5 @@ public class PersonService {
     public Person addPerson(Person person) throws SQLException {
         return repository.addPerson(person);
     }
-    public Person addPersonById(Person person) throws SQLException {
-        return repository.addPersonById(person);
-    }
 
 }

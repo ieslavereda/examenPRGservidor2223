@@ -11,6 +11,5 @@ public interface IPersonRepository {
     Person deletePersonById(int id) throws SQLException;
     Person updatePerson(Person person) throws SQLException;
     Person addPerson(Person person) throws SQLException;
-    Person addPersonById(Person person) throws SQLException;
 
 }
