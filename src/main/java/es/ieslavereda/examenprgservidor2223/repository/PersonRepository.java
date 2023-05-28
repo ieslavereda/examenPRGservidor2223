@@ -80,6 +80,7 @@ public class PersonRepository implements IPersonRepository {
         String query = "{ ? = call createPerson(?,?,?,?)}";
         try(Connection connection = MyDataSource.getMyDataSource().getConnection();
             CallableStatement cs = connection.prepareCall(query)){
+            cs.registerOutParameter(1,Types.INTEGER);
             cs.setNull(2,0);
             cs.setString(3, person1.getFirst_name());
             cs.setString(4, person1.getLast_name());
