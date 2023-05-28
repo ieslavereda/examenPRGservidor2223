@@ -28,5 +28,4 @@ public class PersonService {
     public Person addPerson(Person person) throws SQLException {
         return repository.addPerson(person);
     }
-
 }

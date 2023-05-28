@@ -5,7 +5,6 @@ import es.ieslavereda.examenprgservidor2223.model.MyDataSource;
 import es.ieslavereda.examenprgservidor2223.model.Person;
 import org.springframework.stereotype.Repository;
 
-import javax.sql.DataSource;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -93,4 +92,5 @@ public class PersonRepository implements IPersonRepository {
         }
         return person;
     }
+
 }
